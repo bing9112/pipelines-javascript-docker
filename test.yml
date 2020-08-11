@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: appointment2u.azurecr.io/bingpipelinesjavascriptdocker:109
+        image: appointment2u.azurecr.io/bingpipelinesjavascriptdocker:118
         ports:
         - containerPort: 80
