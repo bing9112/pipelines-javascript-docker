@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-test-app
+  labels:
+    app: demo-test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx0
+  template:
+    metadata:
+      labels:
+        app: nginx0
+    spec:
+      containers:
+      - name: nginx
+        image: appointment2u.azurecr.io/bingpipelinesjavascriptdocker:109
+        ports:
+        - containerPort: 80
